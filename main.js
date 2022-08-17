@@ -15,7 +15,19 @@ $http.beforeRequest = function(options){
 $http.afterRequest = function () {
   wx.hideLoading()
 }
+
+
+// 在全局中封装提示方法
+uni.$showMsg = function( title = '数据加载失败', duration = 1500){
+	uni.showToast({
+		title:title,
+		duration:duration,
+		icon:'none'
+	})
+}
+
 Vue.config.productionTip = false
+
 
 App.mpType = 'app'
 

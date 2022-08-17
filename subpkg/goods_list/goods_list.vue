@@ -1,6 +1,6 @@
 <template>
 	<view>
-		分类
+		商品列表
 	</view>
 </template>
 
@@ -15,5 +15,5 @@
 </script>
 
 <style lang="scss">
-
+	
 </style>
