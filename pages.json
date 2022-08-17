@@ -2,32 +2,35 @@
 	"pages": [ {
 		"path": "pages/home/home",
 		"style": {
-			"navigationBarTitleText": "",
+			
 			"enablePullDownRefresh": false
 		}
 
 	}, {
 		"path": "pages/category/category",
 		"style": {
-			"navigationBarTitleText": "",
 			"enablePullDownRefresh": false
 		}
 
 	}, {
 		"path": "pages/cart/cart",
 		"style": {
-			"navigationBarTitleText": "",
 			"enablePullDownRefresh": false
 		}
 
 	}, {
 		"path": "pages/my/my",
 		"style": {
-			"navigationBarTitleText": "",
 			"enablePullDownRefresh": false
 		}
 
 	}],
+	 "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": []
+    }
+	],
 	"tabBar": {
 	    "selectedColor": "#C00000",
 	    "list": [
@@ -58,9 +61,9 @@
 	    ]
 	  },
 	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "购物商城",
-		"navigationBarBackgroundColor": "#007AFF",
-		"backgroundColor": "#FFFFFF"
-	}
+	    "navigationBarTextStyle": "#fff",
+	    "navigationBarTitleText": "购物商城",
+	    "navigationBarBackgroundColor": "#C00000",
+	    "backgroundColor": "#291aff"
+	  }
 }
