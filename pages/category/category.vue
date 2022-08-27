@@ -1,4 +1,8 @@
 <template>
+	<view class="cate">
+	<view class='search-style'>
+		<search-view @clickSearch = "toSearchView"></search-view>
+	</view>
 	<view class="cate-content">
 		<!-- 左边选项区域 -->
 		<view class="cate-left">
@@ -22,6 +26,8 @@
 					</view>
 				</view>
 			</scroll-view>
+		</view>
+		
 		</view>
 	</view>
 </template>
@@ -75,6 +81,12 @@
 				uni.navigateTo({
 					url:`.//subpkg/goods_list/goods_list?cid=${goodId}`
 				})
+			},
+			// 跳到搜索页面
+			toSearchView(){
+				uni.navigateTo({
+					url:'/subpkg/good_serach/good_serach'
+				})
 			}
 		},
 		
@@ -82,6 +94,11 @@
 </script>
 
 <style lang="scss">
+	.search-style {
+		position: sticky;
+		top: 0;
+		z-index: 999;
+	}
 	.cate-content{
 		display: flex;
 	}

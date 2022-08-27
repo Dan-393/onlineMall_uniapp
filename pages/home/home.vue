@@ -1,6 +1,9 @@
 <template>
 	<view>
 		<!-- 搜索栏 -->
+		<view class='search-style'>
+			<search-view  @clickSearch = "toSearchView"></search-view>
+		</view>
 		<!-- 轮播图 -->
 		<swiper circular :indicator-dots="indicatorDots" :autoplay="autoplay">
 			<swiper-item v-for="item in swiperList" :key="item.goods_id">
@@ -92,11 +95,22 @@
 					})
 				}
 			},
+			// 跳到搜索页面
+			toSearchView(){
+				uni.navigateTo({
+					url:'/subpkg/good_serach/good_serach'
+				})
+			}
 		}
 	}
 </script>
 
 <style lang="scss">
+	.search-style {
+		position: sticky;
+		top: 0;
+		z-index: 999;
+	}
 	swiper{
 		height: 330rpx;
 		.swiper-item {

@@ -46,6 +46,15 @@
                 }
                 
                 }
+                ,{
+                    "path" : "good_serach/good_serach",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
             ]
     }
 	],
@@ -79,7 +88,7 @@
 	    ]
 	  },
 	"globalStyle": {
-	    "navigationBarTextStyle": "#fff",
+	    "navigationBarTextStyle": "white",
 	    "navigationBarTitleText": "购物商城",
 	    "navigationBarBackgroundColor": "#C00000",
 	    "backgroundColor": "#291aff"
